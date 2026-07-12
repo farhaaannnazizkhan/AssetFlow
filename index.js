@@ -1,35 +1,3 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const authRoutes_1 = __importDefault(require("./authRoutes"));
-const departmentRoutes_1 = __importDefault(require("./departmentRoutes"));
-const categoryRoutes_1 = __importDefault(require("./categoryRoutes"));
-const employeeRoutes_1 = __importDefault(require("./employeeRoutes"));
-const assetRoutes_1 = __importDefault(require("./assetRoutes"));
-const allocationRoutes_1 = __importDefault(require("./allocationRoutes"));
-const transferRoutes_1 = __importDefault(require("./transferRoutes"));
-const bookingRoutes_1 = __importDefault(require("./bookingRoutes"));
-const maintenanceRoutes_1 = __importDefault(require("./maintenanceRoutes"));
-const auditRoutes_1 = __importDefault(require("./auditRoutes"));
-const reportRoutes_1 = __importDefault(require("./reportRoutes"));
-const notificationRoutes_1 = __importDefault(require("./notificationRoutes"));
-const activityLogRoutes_1 = __importDefault(require("./activityLogRoutes"));
-const router = (0, express_1.Router)();
-router.use('/auth', authRoutes_1.default);
-router.use('/departments', departmentRoutes_1.default);
-router.use('/categories', categoryRoutes_1.default);
-router.use('/employees', employeeRoutes_1.default);
-router.use('/assets', assetRoutes_1.default);
-router.use('/allocations', allocationRoutes_1.default);
-router.use('/transfers', transferRoutes_1.default);
-router.use('/bookings', bookingRoutes_1.default);
-router.use('/maintenance', maintenanceRoutes_1.default);
-router.use('/audits', auditRoutes_1.default);
-router.use('/reports', reportRoutes_1.default);
-router.use('/notifications', notificationRoutes_1.default);
-router.use('/activity-logs', activityLogRoutes_1.default);
-exports.default = router;
 //# sourceMappingURL=index.js.map
